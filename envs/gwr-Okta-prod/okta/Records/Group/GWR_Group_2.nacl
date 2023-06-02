@@ -1,0 +1,9 @@
+okta.Group GWR_Group_2@s {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "GWR Group 2"
+  }
+}
