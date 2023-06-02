@@ -1,0 +1,3 @@
+okta.EmailTemplate AuthenticatorEnrolled {
+  name = "AuthenticatorEnrolled"
+}

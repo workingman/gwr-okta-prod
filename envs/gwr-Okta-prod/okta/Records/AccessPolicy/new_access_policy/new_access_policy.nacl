@@ -1,0 +1,11 @@
+okta.AccessPolicy new_access_policy@s {
+  status = "ACTIVE"
+  name = "new access policy"
+  description = '''
+new
+
+'''
+  priority = 1
+  system = false
+  type = "ACCESS_POLICY"
+}

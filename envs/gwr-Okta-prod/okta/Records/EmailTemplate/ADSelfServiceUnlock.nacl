@@ -1,0 +1,3 @@
+okta.EmailTemplate ADSelfServiceUnlock {
+  name = "ADSelfServiceUnlock"
+}

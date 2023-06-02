@@ -1,0 +1,4 @@
+okta.Brand {
+  removePoweredByOkta = false
+  agreeToCustomPrivacyPolicy = false
+}

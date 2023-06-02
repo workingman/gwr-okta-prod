@@ -1,0 +1,36 @@
+okta.ProfileEnrollmentPolicyRule SRD___Enrollment_Policy_sbss__Catch_all_Rule@uuuumuubs {
+  status = "ACTIVE"
+  name = "Catch-all Rule"
+  priority = 99
+  system = true
+  actions = {
+    profileEnrollment = {
+      access = "ALLOW"
+      profileAttributes = [
+        {
+          name = okta.UserSchema.instance.user.definitions.base.properties.firstName
+          label = "First name"
+          required = true
+        },
+        {
+          name = okta.UserSchema.instance.user.definitions.base.properties.lastName
+          label = "Last name"
+          required = true
+        },
+        {
+          name = okta.UserSchema.instance.user.definitions.base.properties.email
+          label = "Primary email"
+          required = true
+        },
+      ]
+      unknownUserAction = "REGISTER"
+      activationRequirements = {
+        emailVerification = true
+      }
+    }
+  }
+  type = "PROFILE_ENROLLMENT"
+  _parent = [
+    okta.ProfileEnrollmentPolicy.instance.SRD___Enrollment_Policy@sbss,
+  ]
+}

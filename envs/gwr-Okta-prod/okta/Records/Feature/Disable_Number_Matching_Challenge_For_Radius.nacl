@@ -1,0 +1,9 @@
+okta.Feature Disable_Number_Matching_Challenge_For_Radius@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Disable Number Matching Challenge For Radius"
+  description = "Allows to disable number matching challenge only for Radius agents"
+  stage = {
+    value = "EA"
+  }
+}

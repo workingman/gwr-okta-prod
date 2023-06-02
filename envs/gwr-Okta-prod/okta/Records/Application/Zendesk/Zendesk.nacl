@@ -1,0 +1,44 @@
+okta.Application Zendesk {
+  name = "zendesk"
+  label = "Zendesk"
+  status = "ACTIVE"
+  accessibility = {
+    selfService = false
+  }
+  licensing = {
+    seatCount = 0
+  }
+  visibility = {
+    autoLaunch = false
+    autoSubmitToolbar = true
+    hide = {
+      iOS = false
+      web = false
+    }
+  }
+  signOnMode = "SAML_2_0"
+  credentials = {
+    userNameTemplate = {
+      template = "user.login"
+      type = "CUSTOM"
+      pushStatus = "DONT_PUSH"
+    }
+  }
+  settings = {
+    app = {
+      companySubDomain = "salto6559"
+    }
+    notifications = {
+      vpn = {
+        network = {
+          connection = "DISABLED"
+        }
+      }
+    }
+  }
+  assignedGroups = [
+    okta.Group.instance.SRD___Support@sbs,
+  ]
+  profileEnrollment = okta.ProfileEnrollmentPolicy.instance.Default_Policy@s
+  accessPolicy = okta.AccessPolicy.instance.Password_only@s
+}
