@@ -5,5 +5,6 @@ okta.Group GWR_Group1@s {
   type = "OKTA_GROUP"
   profile = {
     name = "GWR Group1"
+    description = "New, much better description!"
   }
 }
