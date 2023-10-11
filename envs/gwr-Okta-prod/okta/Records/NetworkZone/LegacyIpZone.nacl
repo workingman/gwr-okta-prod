@@ -1,0 +1,7 @@
+okta.NetworkZone LegacyIpZone {
+  type = "IP"
+  name = "LegacyIpZone"
+  status = "ACTIVE"
+  usage = "POLICY"
+  system = true
+}

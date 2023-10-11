@@ -1,0 +1,9 @@
+okta.Brand {
+  removePoweredByOkta = false
+  agreeToCustomPrivacyPolicy = false
+  name = "okta-dev-01421093"
+  isDefault = true
+  defaultApp = {
+    appInstanceId = okta.Application.instance.Okta_Dashboard@s
+  }
+}

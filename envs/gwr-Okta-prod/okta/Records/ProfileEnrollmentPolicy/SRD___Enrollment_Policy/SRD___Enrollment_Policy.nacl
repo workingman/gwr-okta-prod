@@ -1,0 +1,7 @@
+okta.ProfileEnrollmentPolicy SRD___Enrollment_Policy@sbss {
+  status = "ACTIVE"
+  name = "SRD - Enrollment Policy"
+  priority = 1
+  system = false
+  type = "PROFILE_ENROLLMENT"
+}

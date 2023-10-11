@@ -1,0 +1,9 @@
+okta.Authenticator Phone {
+  type = "phone"
+  key = "phone_number"
+  status = "INACTIVE"
+  name = "Phone"
+  settings = {
+    allowedFor = "recovery"
+  }
+}

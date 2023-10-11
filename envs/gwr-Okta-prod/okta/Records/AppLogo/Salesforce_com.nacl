@@ -1,0 +1,8 @@
+okta.AppLogo Salesforce_com@v {
+  fileName = "Salesforce_com@v.png"
+  contentType = "png"
+  content = file("okta/AppLogo/Salesforce_com@v.png")
+  _parent = [
+    okta.Application.instance.Salesforce_com@v,
+  ]
+}
