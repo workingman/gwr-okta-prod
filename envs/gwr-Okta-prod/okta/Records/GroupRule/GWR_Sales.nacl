@@ -1,0 +1,19 @@
+okta.GroupRule GWR_Sales@s {
+  type = "group_rule"
+  status = "ACTIVE"
+  name = "GWR Sales"
+  conditions = {
+    expression = {
+      value = "(String.toLowerCase(${ okta.UserSchema.instance.user.definitions.base.properties.department }) != 'sales' AND String.toLowerCase(${ okta.UserSchema.instance.user.definitions.base.properties.department }) != 'part time' AND isMemberOfGroupName(\"GWR Sales\"))"
+      type = "urn:okta:expression:1.0"
+    }
+  }
+  actions = {
+    assignUserToGroups = {
+      groupIds = [
+        okta.Group.instance.GWR_Engineering@s,
+      ]
+    }
+  }
+  allGroupsValid = true
+}

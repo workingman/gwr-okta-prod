@@ -1,0 +1,10 @@
+okta.Group GWR_Engineering@s {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "GWR Engineering"
+    description = "20231011-113644"
+  }
+}
