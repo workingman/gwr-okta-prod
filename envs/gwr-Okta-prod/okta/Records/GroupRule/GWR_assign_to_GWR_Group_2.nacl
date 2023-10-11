@@ -1,6 +1,6 @@
 okta.GroupRule GWR_assign_to_GWR_Group_2@s {
   type = "group_rule"
-  status = "INACTIVE"
+  status = "INVALID"
   name = "GWR assign to GWR Group 2"
   conditions = {
     expression = {
@@ -11,9 +11,9 @@ okta.GroupRule GWR_assign_to_GWR_Group_2@s {
   actions = {
     assignUserToGroups = {
       groupIds = [
-        okta.Group.instance.GWR_Group_2@s,
+        okta.Group.instance.missing_00g9t44euwwnmeXED5d7,
       ]
     }
   }
-  allGroupsValid = true
+  allGroupsValid = false
 }
