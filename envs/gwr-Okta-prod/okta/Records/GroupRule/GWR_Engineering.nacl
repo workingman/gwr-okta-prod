@@ -1,0 +1,19 @@
+okta.GroupRule GWR_Engineering@s {
+  type = "group_rule"
+  status = "ACTIVE"
+  name = "GWR Engineering"
+  conditions = {
+    expression = {
+      value = "${ okta.UserSchema.instance.user.definitions.base.properties.division }==\"Engineering\""
+      type = "urn:okta:expression:1.0"
+    }
+  }
+  actions = {
+    assignUserToGroups = {
+      groupIds = [
+        okta.Group.instance.GWR_Engineering@s,
+      ]
+    }
+  }
+  allGroupsValid = true
+}
