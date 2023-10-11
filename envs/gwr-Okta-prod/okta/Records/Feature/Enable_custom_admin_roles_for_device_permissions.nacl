@@ -1,0 +1,9 @@
+okta.Feature Enable_custom_admin_roles_for_device_permissions@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Enable custom admin roles for device permissions"
+  description = "Create custom admin roles with granular permissions for managing devices"
+  stage = {
+    value = "EA"
+  }
+}

@@ -1,0 +1,16 @@
+envs {
+  envs = [
+    {
+      name = "gwr-Okta-dev"
+      accountToServiceName = {
+        okta = "okta"
+      }
+    },
+    {
+      name = "gwr-Okta-prod"
+      accountToServiceName = {
+        okta = "okta"
+      }
+    },
+  ]
+}

@@ -1,0 +1,4 @@
+okta.Role Read_Only_Administrator@bs {
+  label = "Read-Only Administrator"
+  type = "READ_ONLY_ADMIN"
+}

@@ -1,0 +1,19 @@
+okta.GroupRule SRD___Add_to_support_group@sbssss {
+  type = "group_rule"
+  status = "INACTIVE"
+  name = "SRD - Add to support group"
+  conditions = {
+    expression = {
+      value = "${ okta.UserSchema.instance.user.definitions.base.properties.department }==\"Support\""
+      type = "urn:okta:expression:1.0"
+    }
+  }
+  actions = {
+    assignUserToGroups = {
+      groupIds = [
+        okta.Group.instance.SRD___Support@sbs,
+      ]
+    }
+  }
+  allGroupsValid = true
+}

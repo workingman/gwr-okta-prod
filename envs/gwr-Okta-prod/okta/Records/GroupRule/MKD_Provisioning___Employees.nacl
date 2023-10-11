@@ -1,0 +1,21 @@
+okta.GroupRule MKD_Provisioning___Employees@ssbs {
+  type = "group_rule"
+  status = "INACTIVE"
+  name = "MKD Provisioning - Employees"
+  conditions = {
+    expression = {
+      value = "isMemberOfAnyGroup(${ okta.Group.instance.MKD_Employees@s })"
+      type = "urn:okta:expression:1.0"
+    }
+  }
+  actions = {
+    assignUserToGroups = {
+      groupIds = [
+        okta.Group.instance.MKD_Employees@s,
+        okta.Group.instance.MKD_Sales@s,
+        okta.Group.instance.MKD_Support@s,
+      ]
+    }
+  }
+  allGroupsValid = true
+}

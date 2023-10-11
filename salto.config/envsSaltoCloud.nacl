@@ -1,0 +1,12 @@
+envs {
+  envsCloud = [
+    {
+      uuid = "c509dce5-0137-4e5b-959a-79933afdf542"
+      folderName = "gwr-Okta-dev"
+    },
+    {
+      uuid = "b060dae3-c21d-4a25-a439-cdca3d3bd0e9"
+      folderName = "gwr-Okta-prod"
+    },
+  ]
+}
