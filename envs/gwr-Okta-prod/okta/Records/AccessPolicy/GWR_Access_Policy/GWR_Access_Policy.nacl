@@ -1,0 +1,7 @@
+okta.AccessPolicy GWR_Access_Policy@s {
+  status = "ACTIVE"
+  name = "GWR Access Policy"
+  priority = 1
+  system = false
+  type = "ACCESS_POLICY"
+}

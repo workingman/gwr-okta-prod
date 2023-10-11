@@ -1,0 +1,19 @@
+okta.GroupRule GWR_assign_to_GWR_Group_2@s {
+  type = "group_rule"
+  status = "INACTIVE"
+  name = "GWR assign to GWR Group 2"
+  conditions = {
+    expression = {
+      value = "${ okta.UserSchema.instance.user.definitions.base.properties.login }==\"gwr2\""
+      type = "urn:okta:expression:1.0"
+    }
+  }
+  actions = {
+    assignUserToGroups = {
+      groupIds = [
+        okta.Group.instance.GWR_Group_2@s,
+      ]
+    }
+  }
+  allGroupsValid = true
+}

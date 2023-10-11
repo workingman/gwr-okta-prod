@@ -1,0 +1,9 @@
+okta.Feature Configure_management_attestation_for_mobile_devices_with_pre_existing_security_key@sssssssbss {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Configure management attestation for mobile devices with pre-existing security key"
+  description = "Use a pre-existing secret key when you configure Device Management for mobile devices."
+  stage = {
+    value = "EA"
+  }
+}

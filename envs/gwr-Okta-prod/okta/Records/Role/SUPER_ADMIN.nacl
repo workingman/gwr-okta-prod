@@ -1,0 +1,4 @@
+okta.Role Super_Administrator@s {
+  label = "Super Administrator"
+  type = "SUPER_ADMIN"
+}

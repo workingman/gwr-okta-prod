@@ -1,0 +1,4 @@
+okta.Role Application_Administrator@s {
+  label = "Application Administrator"
+  type = "APP_ADMIN"
+}

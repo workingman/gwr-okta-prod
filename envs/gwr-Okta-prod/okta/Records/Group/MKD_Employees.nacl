@@ -1,0 +1,9 @@
+okta.Group MKD_Employees@s {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "MKD Employees"
+  }
+}

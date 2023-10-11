@@ -1,0 +1,19 @@
+okta.GroupRule HB___Assign_to_CEs@sbsss {
+  type = "group_rule"
+  status = "INACTIVE"
+  name = "HB - Assign to CEs"
+  conditions = {
+    expression = {
+      value = "String.stringContains(${ okta.UserSchema.instance.user.definitions.base.properties.title },\"CE\")"
+      type = "urn:okta:expression:1.0"
+    }
+  }
+  actions = {
+    assignUserToGroups = {
+      groupIds = [
+        okta.Group.instance.HB_Customer_Engineers@s,
+      ]
+    }
+  }
+  allGroupsValid = true
+}
