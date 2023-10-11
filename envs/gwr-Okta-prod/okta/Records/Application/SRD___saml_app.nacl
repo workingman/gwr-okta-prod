@@ -1,0 +1,77 @@
+okta.Application SRD___saml_app@sbss {
+  label = "SRD - saml app"
+  status = "INACTIVE"
+  accessibility = {
+    selfService = false
+  }
+  visibility = {
+    autoSubmitToolbar = false
+    hide = {
+      iOS = false
+      web = false
+    }
+  }
+  signOnMode = "SAML_2_0"
+  credentials = {
+    userNameTemplate = {
+      template = "\${source.email}"
+      type = "BUILT_IN"
+    }
+  }
+  settings = {
+    notifications = {
+      vpn = {
+        network = {
+          connection = "DISABLED"
+        }
+      }
+    }
+    signOn = {
+      defaultRelayState = ""
+      ssoAcsUrl = "http://scott.saml/login"
+      idpIssuer = "http://www.okta.com/\${org.externalKey}"
+      audience = "http://scott.saml/980/"
+      recipient = "http://scott.saml/login"
+      destination = "http://scott.saml/login"
+      subjectNameIdTemplate = "\${user.userName}"
+      subjectNameIdFormat = "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
+      responseSigned = true
+      assertionSigned = true
+      signatureAlgorithm = "RSA_SHA256"
+      digestAlgorithm = "SHA256"
+      honorForceAuthn = true
+      authnContextClassRef = "urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport"
+      requestCompressed = false
+      attributeStatements = [
+        {
+          type = "EXPRESSION"
+          name = "first_name"
+          namespace = "urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified"
+          values = [
+            "user.firstName",
+          ]
+        },
+        {
+          type = "EXPRESSION"
+          name = "last_name"
+          namespace = "urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified"
+          values = [
+            "user.lastName",
+          ]
+        },
+      ]
+      allowMultipleAcsEndpoints = false
+      samlSignedRequestEnabled = false
+      slo = {
+        enabled = false
+      }
+    }
+    manualProvisioning = false
+    implicitAssignment = false
+  }
+  assignedGroups = [
+    okta.Group.instance.SRD___Marketing@sbs,
+  ]
+  profileEnrollment = okta.ProfileEnrollmentPolicy.instance.SRD___Enrollment_Policy@sbss
+  accessPolicy = okta.AccessPolicy.instance.Default_Policy@s
+}

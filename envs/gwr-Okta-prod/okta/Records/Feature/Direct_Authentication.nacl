@@ -1,0 +1,9 @@
+okta.Feature Direct_Authentication@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Direct Authentication"
+  description = "Enables new OAuth grant types that can be used to authenticate directly and get tokens without the use of a browser"
+  stage = {
+    value = "EA"
+  }
+}

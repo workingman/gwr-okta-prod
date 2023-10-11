@@ -1,0 +1,5 @@
+okta.UserType DP_User_Type {
+  displayName = "DP User Type"
+  name = "DP_User_Type"
+  default = false
+}

@@ -1,0 +1,16 @@
+envs {
+  envs = [
+    {
+      name = "8873e659-4030-4123-a2a9-6fdaa1a1bfde-gwr-Okta-prod"
+      accountToServiceName = {
+        okta = "okta"
+      }
+    },
+    {
+      name = "gwr-Okta-prod"
+      accountToServiceName = {
+        okta = "okta"
+      }
+    },
+  ]
+}

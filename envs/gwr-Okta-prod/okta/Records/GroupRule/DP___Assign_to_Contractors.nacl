@@ -1,0 +1,19 @@
+okta.GroupRule DP___Assign_to_Contractors@sbsss {
+  type = "group_rule"
+  status = "INACTIVE"
+  name = "DP - Assign to Contractors"
+  conditions = {
+    expression = {
+      value = "String.stringContains(${ okta.UserSchema.instance.user.definitions.base.properties.email },\"external\")"
+      type = "urn:okta:expression:1.0"
+    }
+  }
+  actions = {
+    assignUserToGroups = {
+      groupIds = [
+        okta.Group.instance.DP_Group_1@s,
+      ]
+    }
+  }
+  allGroupsValid = true
+}

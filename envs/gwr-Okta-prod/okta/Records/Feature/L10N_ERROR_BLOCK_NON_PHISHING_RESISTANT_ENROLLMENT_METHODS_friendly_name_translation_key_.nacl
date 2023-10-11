@@ -1,0 +1,9 @@
+okta.Feature L10N_ERROR_BLOCK_NON_PHISHING_RESISTANT_ENROLLMENT_METHODS_friendly_name_translation_key_@uhuuuuuvvvvi {
+  type = "self-service"
+  status = "DISABLED"
+  name = "L10N_ERROR[BLOCK_NON_PHISHING_RESISTANT_ENROLLMENT_METHODS.friendly.name.translation.key]"
+  description = "L10N_ERROR[BLOCK_NON_PHISHING_RESISTANT_ENROLLMENT_METHODS.business.description.translation.key]"
+  stage = {
+    value = "EA"
+  }
+}
