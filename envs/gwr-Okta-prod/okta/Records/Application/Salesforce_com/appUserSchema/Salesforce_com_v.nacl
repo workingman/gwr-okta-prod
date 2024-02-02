@@ -4,6 +4,17 @@ okta.AppUserSchema Salesforce_com_v@um {
     custom = {
       id = "#custom"
       type = "object"
+      properties = {
+        gwr_attribute1 = {
+          title = "gwr_attribute1"
+          type = "string"
+          scope = "NONE"
+          maxLength = 10
+          master = {
+            type = "PROFILE_MASTER"
+          }
+        }
+      }
     }
     base = {
       id = "#base"
@@ -30,4 +41,5 @@ okta.AppUserSchema Salesforce_com_v@um {
   _parent = [
     okta.Application.instance.Salesforce_com@v,
   ]
+  _alias = "Salesforce.com User"
 }

@@ -1,6 +1,6 @@
 okta.GroupRule GWR_Sales@s {
   type = "group_rule"
-  status = "ACTIVE"
+  status = "INACTIVE"
   name = "GWR Sales"
   conditions = {
     expression = {
@@ -16,4 +16,5 @@ okta.GroupRule GWR_Sales@s {
     }
   }
   allGroupsValid = true
+  _alias = "GWR Sales"
 }
