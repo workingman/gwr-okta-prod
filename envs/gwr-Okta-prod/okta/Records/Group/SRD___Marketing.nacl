@@ -1,0 +1,10 @@
+okta.Group SRD___Marketing@sbs {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "SRD - Marketing"
+  }
+  _alias = "SRD - Marketing"
+}

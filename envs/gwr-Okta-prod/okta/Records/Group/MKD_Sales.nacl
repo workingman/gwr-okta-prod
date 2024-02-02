@@ -1,0 +1,11 @@
+okta.Group MKD_Sales@s {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "MKD Sales"
+    description = "This change was made outside of Salto ;)"
+  }
+  _alias = "MKD Sales"
+}

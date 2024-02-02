@@ -1,0 +1,10 @@
+okta.Feature Okta_Verify_user_verification_with_passcode@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Okta Verify user verification with passcode"
+  description = "Users can now enable PIN or passcode in addition to biometric confirmation for their Okta Verify account. This feature adds user verification support for devices without biometric capabilities and users with accessibility needs."
+  stage = {
+    value = "EA"
+  }
+  _alias = "Okta Verify user verification with passcode"
+}

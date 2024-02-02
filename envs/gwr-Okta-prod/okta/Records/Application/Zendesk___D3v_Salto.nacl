@@ -1,0 +1,53 @@
+okta.Application Zendesk___D3v_Salto@sbsb {
+  name = "zendesk"
+  label = "Zendesk - D3v-Salto"
+  status = "ACTIVE"
+  accessibility = {
+    selfService = false
+  }
+  licensing = {
+    seatCount = 0
+  }
+  visibility = {
+    autoLaunch = false
+    autoSubmitToolbar = true
+    hide = {
+      iOS = false
+      web = false
+    }
+  }
+  features = [
+    "IMPORT_PROFILE_UPDATES",
+    "PUSH_NEW_USERS",
+    "GROUP_PUSH",
+    "IMPORT_USER_SCHEMA",
+    "IMPORT_NEW_USERS",
+  ]
+  signOnMode = "BROWSER_PLUGIN"
+  credentials = {
+    scheme = "EDIT_USERNAME_AND_PASSWORD"
+    userNameTemplate = {
+      template = "user.login"
+      type = "CUSTOM"
+      pushStatus = "DONT_PUSH"
+    }
+    revealPassword = true
+  }
+  settings = {
+    app = {
+      companySubDomain = "d3v-salto"
+    }
+    notifications = {
+      vpn = {
+        network = {
+          connection = "DISABLED"
+        }
+      }
+    }
+    manualProvisioning = false
+    implicitAssignment = false
+  }
+  profileEnrollment = okta.ProfileEnrollmentPolicy.instance.Default_Policy@s
+  accessPolicy = okta.AccessPolicy.instance.Default_Policy@s
+  _alias = "Zendesk - D3v-Salto"
+}

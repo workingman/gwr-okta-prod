@@ -1,0 +1,3 @@
+okta.SignOutPage {
+  signOutPage = "DEFAULT"
+}
