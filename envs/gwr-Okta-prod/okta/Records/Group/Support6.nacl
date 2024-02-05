@@ -1,0 +1,13 @@
+okta.Group Support6 {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "APP_GROUP"
+  profile = {
+    name = "Support6"
+  }
+  source = {
+    id = okta.Application.instance.Zendesk___D3v_Salto@sbsb
+  }
+  _alias = "Support6"
+}

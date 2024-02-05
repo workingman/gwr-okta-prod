@@ -1,0 +1,10 @@
+okta.Feature L10N_ERROR_BLOCK_NON_PHISHING_RESISTANT_ENROLLMENT_METHODS_friendly_name_translation_key_@uhuuuuuvvvvi {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Block non-phishing-resistant enrollment methods for Okta Verify"
+  description = "Enable blocking of phishable enrollment methods such as SMS, email, and QR code. Users will still be able to complete same-device enrollment and use the OV to OV bootstrap feature to create new enrollments."
+  stage = {
+    value = "EA"
+  }
+  _alias = "Block non-phishing-resistant enrollment methods for Okta Verify"
+}

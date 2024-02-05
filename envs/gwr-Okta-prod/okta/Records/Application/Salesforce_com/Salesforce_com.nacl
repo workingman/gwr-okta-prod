@@ -1,0 +1,48 @@
+okta.Application Salesforce_com@v {
+  name = "salesforce"
+  label = "Salesforce.com"
+  status = "ACTIVE"
+  accessibility = {
+    selfService = false
+  }
+  licensing = {
+    seatCount = 0
+  }
+  visibility = {
+    autoLaunch = false
+    autoSubmitToolbar = true
+    hide = {
+      iOS = false
+      web = false
+    }
+  }
+  signOnMode = "BROWSER_PLUGIN"
+  credentials = {
+    scheme = "EDIT_USERNAME_AND_PASSWORD"
+    userNameTemplate = {
+      template = "\${source.login}"
+      type = "BUILT_IN"
+    }
+    revealPassword = true
+  }
+  settings = {
+    app = {
+      integrationType = "STANDARD"
+      loginUrl = "https://salto94-dev-ed.develop.my.salesforce.com"
+      instanceType = "PRODUCTION"
+      customDomain = "salto94-dev-ed.develop"
+    }
+    notifications = {
+      vpn = {
+        network = {
+          connection = "DISABLED"
+        }
+      }
+    }
+    manualProvisioning = false
+    implicitAssignment = false
+  }
+  profileEnrollment = okta.ProfileEnrollmentPolicy.instance.Default_Policy@s
+  accessPolicy = okta.AccessPolicy.instance.Default_Policy@s
+  _alias = "Salesforce.com"
+}

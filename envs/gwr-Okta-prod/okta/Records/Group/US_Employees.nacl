@@ -1,0 +1,10 @@
+okta.Group US_Employees@s {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "US Employees"
+  }
+  _alias = "US Employees"
+}

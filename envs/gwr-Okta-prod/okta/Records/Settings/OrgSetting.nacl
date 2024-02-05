@@ -1,0 +1,14 @@
+okta.OrgSetting {
+  subdomain = "dev-01421093"
+  companyName = "okta-dev-01421093"
+  status = "ACTIVE"
+  website = "https://developer.okta.com"
+  contactTypes = [
+    {
+      contactType = "BILLING"
+    },
+    {
+      contactType = "TECHNICAL"
+    },
+  ]
+}
