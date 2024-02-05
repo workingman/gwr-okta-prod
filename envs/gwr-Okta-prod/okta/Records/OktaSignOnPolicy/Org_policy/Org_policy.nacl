@@ -1,0 +1,17 @@
+okta.OktaSignOnPolicy Org_policy@s {
+  status = "ACTIVE"
+  name = "Org policy"
+  priority = 1
+  system = false
+  conditions = {
+    people = {
+      groups = {
+        include = [
+          okta.Group.instance.US_Employees@s,
+        ]
+      }
+    }
+  }
+  type = "OKTA_SIGN_ON"
+  _alias = "Org policy"
+}

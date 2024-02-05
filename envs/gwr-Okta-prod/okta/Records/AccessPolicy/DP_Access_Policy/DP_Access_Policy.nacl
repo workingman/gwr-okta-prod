@@ -1,0 +1,8 @@
+okta.AccessPolicy DP_Access_Policy@s {
+  status = "ACTIVE"
+  name = "DP Access Policy"
+  
+  system = false
+  type = "ACCESS_POLICY"
+  _alias = "DP Access Policy"
+}

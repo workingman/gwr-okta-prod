@@ -1,0 +1,20 @@
+okta.GroupRule SRD___Assign_to_test_group@sbssss {
+  type = "group_rule"
+  status = "INACTIVE"
+  name = "SRD - Assign to test group"
+  conditions = {
+    expression = {
+      value = "String.startsWith(${ okta.UserSchema.instance.user.definitions.base.properties.costCenter },\"SRD\")"
+      type = "urn:okta:expression:1.0"
+    }
+  }
+  actions = {
+    assignUserToGroups = {
+      groupIds = [
+        okta.Group.instance.SRD___Test_Group@sbss,
+      ]
+    }
+  }
+  allGroupsValid = true
+  _alias = "SRD - Assign to test group"
+}

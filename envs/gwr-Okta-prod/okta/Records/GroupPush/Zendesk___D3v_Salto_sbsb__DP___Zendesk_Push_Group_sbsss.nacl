@@ -1,0 +1,9 @@
+okta.GroupPush Zendesk___D3v_Salto_sbsb__DP___Zendesk_Push_Group_sbsss@uuuumuuuuuuum {
+  status = "ACTIVE"
+  userGroupId = okta.Group.instance.DP___Zendesk_Push_Group@sbsss
+  newAppGroupName = "DP - Zendesk Push Group"
+  _parent = [
+    okta.Application.instance.Zendesk___D3v_Salto@sbsb,
+  ]
+  _alias = "DP - Zendesk Push Group : DP - Zendesk Push Group"
+}

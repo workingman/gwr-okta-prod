@@ -1,0 +1,10 @@
+okta.Feature OAuth_2_0_Demonstrating_Proof_of_Possession_support_on_Okta_management_APIs@svsssssssss {
+  type = "self-service"
+  status = "DISABLED"
+  name = "OAuth 2.0 Demonstrating Proof of Possession support on Okta management APIs"
+  description = "Supports the use of DPoP-bound OAuth 2.0 access tokens on Okta APIs for enhanced security."
+  stage = {
+    value = "EA"
+  }
+  _alias = "OAuth 2.0 Demonstrating Proof of Possession support on Okta management APIs"
+}

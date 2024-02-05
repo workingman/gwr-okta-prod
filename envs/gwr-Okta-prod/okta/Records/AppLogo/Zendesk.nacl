@@ -1,0 +1,8 @@
+okta.AppLogo Zendesk {
+  fileName = "Zendesk.png"
+  contentType = "png"
+  content = file("okta/AppLogo/Zendesk.png")
+  _parent = [
+    okta.Application.instance.Zendesk,
+  ]
+}

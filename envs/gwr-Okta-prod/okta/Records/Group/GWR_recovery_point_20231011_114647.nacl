@@ -1,0 +1,11 @@
+okta.Group GWR_recovery_point_20231011_114647@sssb {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "GWR recovery point 20231011-114647"
+    description = "20231011-114650"
+  }
+  _alias = "GWR recovery point 20231011-114647"
+}

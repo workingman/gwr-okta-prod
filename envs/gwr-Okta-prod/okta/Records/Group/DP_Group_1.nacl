@@ -1,0 +1,11 @@
+okta.Group DP_Group_1@s {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "DP Group 1"
+    description = "Description for DP Group 1!"
+  }
+  _alias = "DP Group 1"
+}

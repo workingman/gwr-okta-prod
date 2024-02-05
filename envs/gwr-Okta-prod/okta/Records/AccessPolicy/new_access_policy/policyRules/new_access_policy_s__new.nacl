@@ -1,0 +1,42 @@
+okta.AccessPolicyRule new_access_policy_s__new@uumuu {
+  status = "ACTIVE"
+  name = "new"
+  priority = 0
+  system = false
+  conditions = {
+    network = {
+      connection = "ANYWHERE"
+    }
+    riskScore = {
+      level = "ANY"
+    }
+    elCondition = {
+      condition = "user.isMemberOf({'group.id': {${ okta.Group.instance.missing_00g8ytyk09BNvF6X65d7 }}}, {'group.type': 'APP_GROUP'})"
+    }
+  }
+  actions = {
+    appSignOn = {
+      access = "ALLOW"
+      verificationMethod = {
+        factorMode = "2FA"
+        type = "ASSURANCE"
+        reauthenticateIn = "PT2H"
+        constraints = [
+          {
+            knowledge = {
+              types = [
+                "password",
+              ]
+              reauthenticateIn = "PT2H"
+            }
+          },
+        ]
+      }
+    }
+  }
+  type = "ACCESS_POLICY"
+  _parent = [
+    okta.AccessPolicy.instance.new_access_policy@s,
+  ]
+  _alias = "new"
+}
