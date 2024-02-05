@@ -1,0 +1,11 @@
+okta.Group GWR_Sales@s {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "GWR Sales"
+    description = "20231011-115707"
+  }
+  _alias = "GWR Sales"
+}
