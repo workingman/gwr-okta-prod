@@ -26,4 +26,5 @@ okta.AccessPolicyRule Classic_Migrated_s__Catch_all_Rule@umuubs {
   _parent = [
     okta.AccessPolicy.instance.Classic_Migrated@s,
   ]
+  _alias = "Catch-all Rule"
 }

@@ -13,4 +13,5 @@ okta.OAuth2Claim default__updated_at {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "updated_at"
 }

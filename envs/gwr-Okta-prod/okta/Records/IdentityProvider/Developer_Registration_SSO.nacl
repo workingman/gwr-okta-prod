@@ -55,4 +55,5 @@ okta.IdentityProvider Developer_Registration_SSO@s {
     maxClockSkew = 0
   }
   type = "OIDC"
+  _alias = "Developer Registration SSO"
 }

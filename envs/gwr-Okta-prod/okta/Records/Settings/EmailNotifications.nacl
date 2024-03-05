@@ -46,6 +46,11 @@ okta.EmailNotifications {
       displayName = "User reporting of suspicious activity"
       send = true
     },
+    {
+      emailType = "AGENT_AUTO_UPDATE_NOTIFICATION"
+      displayName = "Agent auto-update notifications: AD Agent"
+      send = true
+    },
   ]
   oktaEmails = [
     {

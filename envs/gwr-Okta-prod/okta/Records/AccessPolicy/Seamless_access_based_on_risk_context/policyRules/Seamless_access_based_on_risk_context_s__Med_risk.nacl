@@ -32,4 +32,5 @@ okta.AccessPolicyRule Seamless_access_based_on_risk_context_s__Med_risk@uuuuumuu
   _parent = [
     okta.AccessPolicy.instance.Seamless_access_based_on_risk_context@s,
   ]
+  _alias = "Med risk"
 }

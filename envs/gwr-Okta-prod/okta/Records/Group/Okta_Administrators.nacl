@@ -7,4 +7,5 @@ okta.Group Okta_Administrators@s {
     name = "Okta Administrators"
     description = "Okta manages this group, which contains all administrators in your organization."
   }
+  _alias = "Okta Administrators"
 }

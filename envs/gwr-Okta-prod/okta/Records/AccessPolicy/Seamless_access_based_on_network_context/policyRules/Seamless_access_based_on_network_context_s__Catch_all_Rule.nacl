@@ -24,4 +24,5 @@ okta.AccessPolicyRule Seamless_access_based_on_network_context_s__Catch_all_Rule
   _parent = [
     okta.AccessPolicy.instance.Seamless_access_based_on_network_context@s,
   ]
+  _alias = "Catch-all Rule"
 }

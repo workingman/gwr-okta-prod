@@ -1,6 +1,6 @@
 okta.BrandTheme {
-  logo = "https://ok12static.oktacdn.com/assets/img/logos/okta-logo.1e146cad5713da744492be95eb0f7793.png"
-  favicon = "https://${ okta.OrgSetting.instance._config.subdomain }.okta.com/favicon.ico"
+  
+  
   primaryColorHex = "#1662dd"
   primaryColorContrastHex = "#ffffff"
   secondaryColorHex = "#ebebed"
@@ -8,7 +8,7 @@ okta.BrandTheme {
   signInPageTouchPointVariant = "OKTA_DEFAULT"
   endUserDashboardTouchPointVariant = "OKTA_DEFAULT"
   errorPageTouchPointVariant = "OKTA_DEFAULT"
-  emailTemplateTouchPointVariant = "OKTA_DEFAULT"
+  emailTemplateTouchPointVariant = "FULL_THEME"
   loadingPageTouchPointVariant = "OKTA_DEFAULT"
   _parent = [
     okta.Brand.instance,

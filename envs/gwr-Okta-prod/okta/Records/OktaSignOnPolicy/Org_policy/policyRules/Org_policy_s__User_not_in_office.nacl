@@ -1,0 +1,48 @@
+okta.OktaSignOnPolicyRule Org_policy_s__User_not_in_office@umuusss {
+  status = "ACTIVE"
+  name = "User not in office"
+  priority = 2
+  system = false
+  conditions = {
+    network = {
+      connection = "ZONE"
+      exclude = [
+        okta.NetworkZone.instance.US_office@s,
+      ]
+    }
+    authContext = {
+      authType = "ANY"
+    }
+    risk = {
+      behaviors = [
+        okta.BehaviorRule.instance.New_IP___updated@ssbs,
+      ]
+    }
+    riskScore = {
+      level = "ANY"
+    }
+    identityProvider = {
+      provider = "ANY"
+    }
+  }
+  actions = {
+    signon = {
+      access = "ALLOW"
+      requireFactor = false
+      rememberDeviceByDefault = false
+      session = {
+        usePersistentCookie = false
+        maxSessionIdleMinutes = 240
+        maxSessionLifetimeMinutes = 1440
+      }
+      additionalProperties = {
+        primaryFactor = "PASSWORD_IDP_ANY_FACTOR"
+      }
+    }
+  }
+  type = "SIGN_ON"
+  _parent = [
+    okta.OktaSignOnPolicy.instance.Org_policy@s,
+  ]
+  _alias = "User not in office"
+}

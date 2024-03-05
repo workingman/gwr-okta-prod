@@ -1,0 +1,320 @@
+okta.AppUserSchema Zendesk___D3v_Salto_sbsb@uuuum {
+  title = "Zendesk - D3v-Salto User"
+  definitions = {
+    custom = {
+      id = "#custom"
+      type = "object"
+      properties = {
+        zendeskExternalId = {
+          title = "Zendesk User external Id"
+          type = "string"
+          scope = "SELF"
+          master = {
+            type = "PROFILE_MASTER"
+          }
+        }
+        email = {
+          title = "User's email"
+          type = "string"
+          scope = "SELF"
+          master = {
+            type = "PROFILE_MASTER"
+          }
+        }
+      }
+    }
+    base = {
+      id = "#base"
+      type = "object"
+      properties = {
+        firstName = {
+          title = "The employee's first name."
+          type = "string"
+          required = true
+          scope = "SELF"
+          master = {
+            type = "PROFILE_MASTER"
+          }
+        }
+        lastName = {
+          title = "The employee's last name."
+          type = "string"
+          required = true
+          scope = "SELF"
+          master = {
+            type = "PROFILE_MASTER"
+          }
+        }
+        locale = {
+          title = "Locale"
+          type = "string"
+          scope = "NONE"
+          master = {
+            type = "PROFILE_MASTER"
+          }
+          additionalProperties = {
+            format = "ref-id"
+            objectName = "locale"
+          }
+        }
+        additionalProperties = {
+          userName = {
+            title = "Username"
+            type = "string"
+            required = true
+            scope = "SELF"
+            master = {
+              type = "PROFILE_MASTER"
+            }
+          }
+          alias = {
+            title = "Nickname"
+            description = "Agents can have an alias that is displayed to end-users."
+            type = "string"
+            scope = "SELF"
+            master = {
+              type = "PROFILE_MASTER"
+            }
+          }
+          timeZone = {
+            title = "Time Zone"
+            description = "The time-zone of the employee."
+            type = "string"
+            scope = "NONE"
+            enum = [
+              "American Samoa",
+              "International Date Line West",
+              "Midway Island",
+              "Hawaii",
+              "Alaska",
+              "Arizona",
+              "Pacific Time (US & Canada)",
+              "Tijuana",
+              "Central America",
+              "Chihuahua",
+              "Mazatlan",
+              "Mountain Time (US & Canada)",
+              "Saskatchewan",
+              "Bogota",
+              "Central Time (US & Canada)",
+              "Guadalajara",
+              "Lima",
+              "Mexico City",
+              "Monterrey",
+              "Quito",
+              "Caracas",
+              "Eastern Time (US & Canada)",
+              "Georgetown",
+              "Indiana (East)",
+              "La Paz",
+              "Puerto Rico",
+              "Atlantic Time (Canada)",
+              "Brasilia",
+              "Buenos Aires",
+              "Santiago",
+              "Newfoundland",
+              "Greenland",
+              "Mid-Atlantic",
+              "Cape Verde Is.",
+              "Azores",
+              "Casablanca",
+              "Monrovia",
+              "UTC",
+              "Dublin",
+              "Edinburgh",
+              "Lisbon",
+              "London",
+              "West Central Africa",
+              "Amsterdam",
+              "Belgrade",
+              "Berlin",
+              "Bern",
+              "Bratislava",
+              "Brussels",
+              "Budapest",
+              "Cairo",
+              "Copenhagen",
+              "Harare",
+              "Ljubljana",
+              "Madrid",
+              "Oslo",
+              "Paris",
+              "Prague",
+              "Pretoria",
+              "Rome",
+              "Sarajevo",
+              "Skopje",
+              "Stockholm",
+              "Vienna",
+              "Warsaw",
+              "Zagreb",
+              "Athens",
+              "Baghdad",
+              "Bucharest",
+              "Helsinki",
+              "Istanbul",
+              "Jerusalem",
+              "Kuwait",
+              "Kyev",
+              "Kyiv",
+              "Minsk",
+              "Moscow",
+              "Nairobi",
+              "Riga",
+              "Riyadh",
+              "Sofia",
+              "St. Petersburg",
+              "Tallinn",
+              "Vilnius",
+              "Volgograd",
+              "Abu Dhabi",
+              "Muscat",
+              "Tbilisi",
+              "Yerevan",
+              "Kabul",
+              "Tehran",
+              "Baku",
+              "Ekaterinburg",
+              "Islamabad",
+              "Karachi",
+              "Tashkent",
+              "Chennai",
+              "Kolkata",
+              "Mumbai",
+              "New Delhi",
+              "Sri Jayawardenepura",
+              "Kathmandu",
+              "Almaty",
+              "Astana",
+              "Dhaka",
+              "Novosibirsk",
+              "Urumqi",
+              "Rangoon",
+              "Bangkok",
+              "Hanoi",
+              "Jakarta",
+              "Krasnoyarsk",
+              "Beijing",
+              "Chongqing",
+              "Hong Kong",
+              "Irkutsk",
+              "Kuala Lumpur",
+              "Perth",
+              "Singapore",
+              "Taipei",
+              "Osaka",
+              "Sapporo",
+              "Seoul",
+              "Tokyo",
+              "Ulaan Bataar",
+              "Yakutsk",
+              "Adelaide",
+              "Darwin",
+              "Brisbane",
+              "Canberra",
+              "Guam",
+              "Hobart",
+              "Magadan",
+              "Melbourne",
+              "Port Moresby",
+              "Solomon Is.",
+              "Sydney",
+              "Vladivostok",
+              "New Caledonia",
+              "Auckland",
+              "Fiji",
+              "Kamchatka",
+              "Marshall Is.",
+              "Wellington",
+              "Nuku'alofa",
+              "Samoa",
+              "Tokelau Is.",
+            ]
+            master = {
+              type = "PROFILE_MASTER"
+            }
+          }
+          zendeskRole = {
+            title = "Role"
+            description = "The role of the employee. Possible values: 'end-user', 'agent', 'admin'"
+            type = "string"
+            scope = "NONE"
+            enum = [
+              "end-user",
+              "agent",
+              "admin",
+            ]
+            master = {
+              type = "PROFILE_MASTER"
+            }
+          }
+          zendeskCustomRole = {
+            title = "Custom role"
+            description = "A custom role on the user if the user is an agent on the Enterprise plan."
+            type = "string"
+            format = "ref-id"
+            scope = "NONE"
+            objectName = "zendeskCustomRole"
+            master = {
+              type = "PROFILE_MASTER"
+            }
+          }
+          zendeskRestrictionId = {
+            title = "Ticket Access Restrictions"
+            description = "Zendesk Restrictions on tickets the user can see"
+            type = "string"
+            scope = "NONE"
+            enum = [
+              "all",
+              "groups",
+              "organization",
+              "assigned",
+              "requested",
+            ]
+            master = {
+              type = "PROFILE_MASTER"
+            }
+          }
+          phone = {
+            title = "Phone"
+            description = "The primary phone number of the employee."
+            type = "string"
+            scope = "SELF"
+            master = {
+              type = "PROFILE_MASTER"
+            }
+          }
+          zendeskOrganization = {
+            title = "Organization"
+            description = "The id of the organization this user is associated with."
+            type = "string"
+            format = "ref-id"
+            scope = "NONE"
+            objectName = "zendeskOrganization"
+            master = {
+              type = "PROFILE_MASTER"
+            }
+          }
+          tags = {
+            title = "Tags"
+            description = "The tags of the user. Only present if your account has user tagging enabled."
+            type = "string"
+            scope = "NONE"
+            master = {
+              type = "PROFILE_MASTER"
+            }
+          }
+        }
+      }
+      required = [
+        "firstName",
+        "lastName",
+        "userName",
+      ]
+    }
+  }
+  _parent = [
+    okta.Application.instance.Zendesk___D3v_Salto@sbsb,
+  ]
+  _alias = "Zendesk - D3v-Salto User"
+}

@@ -9,4 +9,5 @@ okta.BehaviorRule New_Country@s {
       granularity = "COUNTRY"
     }
   }
+  _alias = "New Country"
 }

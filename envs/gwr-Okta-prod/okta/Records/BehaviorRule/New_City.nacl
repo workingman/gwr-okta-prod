@@ -9,4 +9,5 @@ okta.BehaviorRule New_City@s {
       granularity = "CITY"
     }
   }
+  _alias = "New City"
 }

@@ -28,4 +28,5 @@ okta.AccessPolicyRule Seamless_access_based_on_network_context_s__In_network@uuu
   _parent = [
     okta.AccessPolicy.instance.Seamless_access_based_on_network_context@s,
   ]
+  _alias = "In network"
 }

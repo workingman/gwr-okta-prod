@@ -33,4 +33,5 @@ okta.ProfileEnrollmentPolicyRule Default_Policy_s__Catch_all_Rule@umuubs {
   _parent = [
     okta.ProfileEnrollmentPolicy.instance.Default_Policy@s,
   ]
+  _alias = "Catch-all Rule"
 }

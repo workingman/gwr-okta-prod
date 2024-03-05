@@ -6,4 +6,5 @@ okta.Feature Event_Hook_Filtering@s {
   stage = {
     value = "EA"
   }
+  _alias = "Event Hook Filtering"
 }

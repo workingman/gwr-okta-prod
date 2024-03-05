@@ -1,3 +1,0 @@
-okta.EmailTemplate AuthenticatorReset {
-  name = "AuthenticatorReset"
-}

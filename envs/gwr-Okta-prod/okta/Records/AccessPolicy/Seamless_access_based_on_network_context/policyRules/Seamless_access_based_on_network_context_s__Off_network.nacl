@@ -28,4 +28,5 @@ okta.AccessPolicyRule Seamless_access_based_on_network_context_s__Off_network@uu
   _parent = [
     okta.AccessPolicy.instance.Seamless_access_based_on_network_context@s,
   ]
+  _alias = "Off network"
 }

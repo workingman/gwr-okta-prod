@@ -12,4 +12,5 @@ okta.OAuth2Scope default__okta_myAccount_phone_manage@uuvvv {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "Manage my account phone number"
 }

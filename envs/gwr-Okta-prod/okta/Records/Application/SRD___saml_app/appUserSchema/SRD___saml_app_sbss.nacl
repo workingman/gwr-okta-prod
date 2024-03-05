@@ -30,4 +30,5 @@ okta.AppUserSchema SRD___saml_app_sbss@uuuum {
   _parent = [
     okta.Application.instance.SRD___saml_app@sbss,
   ]
+  _alias = "SRD - saml app User"
 }

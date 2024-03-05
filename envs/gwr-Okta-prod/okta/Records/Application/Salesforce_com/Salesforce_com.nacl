@@ -39,7 +39,10 @@ okta.Application Salesforce_com@v {
         }
       }
     }
+    manualProvisioning = false
+    implicitAssignment = false
   }
   profileEnrollment = okta.ProfileEnrollmentPolicy.instance.Default_Policy@s
   accessPolicy = okta.AccessPolicy.instance.Default_Policy@s
+  _alias = "Salesforce.com"
 }

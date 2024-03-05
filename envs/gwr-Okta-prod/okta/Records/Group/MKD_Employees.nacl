@@ -6,4 +6,5 @@ okta.Group MKD_Employees@s {
   profile = {
     name = "MKD Employees"
   }
+  _alias = "MKD Employees"
 }

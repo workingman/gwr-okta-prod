@@ -7,4 +7,5 @@ okta.Authenticator Email {
     allowedFor = "any"
     tokenLifetimeInMinutes = 5
   }
+  _alias = "Email"
 }

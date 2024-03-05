@@ -33,4 +33,5 @@ okta.ProfileEnrollmentPolicyRule SRD___Enrollment_Policy_sbss__Catch_all_Rule@uu
   _parent = [
     okta.ProfileEnrollmentPolicy.instance.SRD___Enrollment_Policy@sbss,
   ]
+  _alias = "Catch-all Rule"
 }

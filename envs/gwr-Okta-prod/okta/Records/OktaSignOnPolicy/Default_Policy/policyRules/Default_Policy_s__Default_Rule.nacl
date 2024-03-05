@@ -30,4 +30,5 @@ okta.OktaSignOnPolicyRule Default_Policy_s__Default_Rule@umuus {
   _parent = [
     okta.OktaSignOnPolicy.instance.Default_Policy@s,
   ]
+  _alias = "Default Rule"
 }

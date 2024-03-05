@@ -6,4 +6,5 @@ okta.Feature Require_phishing_resistant_authenticator_to_enroll_additional_authe
   stage = {
     value = "EA"
   }
+  _alias = "Require phishing-resistant authenticator to enroll additional authenticators"
 }

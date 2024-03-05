@@ -1,0 +1,26 @@
+okta.NetworkZone US_office@s {
+  type = "IP"
+  name = "US office"
+  status = "ACTIVE"
+  usage = "POLICY"
+  system = false
+  gateways = [
+    {
+      type = "RANGE"
+      value = "94.168.100.0-94.168.100.1"
+    },
+    {
+      type = "RANGE"
+      value = "94.168.152.1-94.168.152.1"
+    },
+    {
+      type = "RANGE"
+      value = "94.168.152.2-94.168.152.2"
+    },
+    {
+      type = "RANGE"
+      value = "94.168.152.3-94.168.152.3"
+    },
+  ]
+  _alias = "US office"
+}

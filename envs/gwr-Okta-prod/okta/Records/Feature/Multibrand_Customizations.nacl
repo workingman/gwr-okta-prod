@@ -1,9 +1,0 @@
-okta.Feature Multibrand_Customizations@s {
-  type = "self-service"
-  status = "DISABLED"
-  name = "Multibrand Customizations"
-  description = "Multibrand allows admins to create multiple brands and three custom domains in a single org (contact support to request more). Each brand will feature it’s own branded sign-in page, error pages, emails, and branded views of the End-User Dashboard."
-  stage = {
-    value = "EA"
-  }
-}

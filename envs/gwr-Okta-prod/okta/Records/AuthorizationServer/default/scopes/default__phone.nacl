@@ -12,4 +12,5 @@ okta.OAuth2Scope default__phone {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "View your phone number."
 }

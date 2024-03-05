@@ -10,4 +10,5 @@ okta.BehaviorRule New_Geo_Location@sb {
       radiusKilometers = 20
     }
   }
+  _alias = "New Geo-Location"
 }

@@ -36,4 +36,5 @@ okta.MultifactorEnrollmentPolicy Default_Policy@s {
     }
   }
   type = "MFA_ENROLL"
+  _alias = "Default Policy"
 }

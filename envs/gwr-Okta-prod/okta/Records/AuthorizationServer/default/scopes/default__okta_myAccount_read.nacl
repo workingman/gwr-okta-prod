@@ -12,4 +12,5 @@ okta.OAuth2Scope default__okta_myAccount_read@uuvv {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "Read my account"
 }

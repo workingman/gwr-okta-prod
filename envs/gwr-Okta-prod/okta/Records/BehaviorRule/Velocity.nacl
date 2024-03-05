@@ -7,4 +7,5 @@ okta.BehaviorRule Velocity {
       velocityKph = 805
     }
   }
+  _alias = "Velocity"
 }

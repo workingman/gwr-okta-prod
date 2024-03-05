@@ -13,4 +13,5 @@ okta.OAuth2Claim default__address {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "address"
 }

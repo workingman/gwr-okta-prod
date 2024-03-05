@@ -76,4 +76,5 @@ okta.PasswordPolicy Default_Policy@s {
     }
   }
   type = "PASSWORD"
+  _alias = "Default Policy"
 }

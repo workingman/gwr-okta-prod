@@ -13,4 +13,5 @@ okta.OAuth2Claim default__birthdate {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "birthdate"
 }

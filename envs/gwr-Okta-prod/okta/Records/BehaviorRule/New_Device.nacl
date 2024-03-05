@@ -8,4 +8,5 @@ okta.BehaviorRule New_Device@s {
       maxEventsUsedForEvaluation = 20
     }
   }
+  _alias = "New Device"
 }

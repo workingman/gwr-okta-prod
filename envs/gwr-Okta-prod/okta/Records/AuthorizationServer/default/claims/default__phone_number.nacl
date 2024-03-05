@@ -13,4 +13,5 @@ okta.OAuth2Claim default__phone_number {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "phone_number"
 }

@@ -12,4 +12,5 @@ okta.OAuth2Scope default__device_sso {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "Request device secret."
 }

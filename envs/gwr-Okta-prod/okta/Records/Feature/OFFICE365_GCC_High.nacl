@@ -6,4 +6,5 @@ okta.Feature OFFICE365_GCC_High@s {
   stage = {
     value = "EA"
   }
+  _alias = "OFFICE365 GCC High"
 }

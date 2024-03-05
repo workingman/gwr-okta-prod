@@ -3,4 +3,5 @@ okta.UserType user {
   name = "user"
   description = "Okta user profile template with default permission settings"
   default = true
+  _alias = "User"
 }

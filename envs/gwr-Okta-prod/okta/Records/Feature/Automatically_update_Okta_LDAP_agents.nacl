@@ -6,4 +6,5 @@ okta.Feature Automatically_update_Okta_LDAP_agents@s {
   stage = {
     value = "EA"
   }
+  _alias = "Automatically update Okta LDAP agents"
 }

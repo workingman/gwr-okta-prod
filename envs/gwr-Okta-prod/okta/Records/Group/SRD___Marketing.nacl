@@ -6,4 +6,5 @@ okta.Group SRD___Marketing@sbs {
   profile = {
     name = "SRD - Marketing"
   }
+  _alias = "SRD - Marketing"
 }

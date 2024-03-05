@@ -9,4 +9,5 @@ okta.OAuth2Claim default__sub {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "sub"
 }

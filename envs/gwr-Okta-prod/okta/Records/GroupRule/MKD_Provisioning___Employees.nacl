@@ -11,11 +11,12 @@ okta.GroupRule MKD_Provisioning___Employees@ssbs {
   actions = {
     assignUserToGroups = {
       groupIds = [
-        okta.Group.instance.MKD_Support@s,
-        okta.Group.instance.MKD_Sales@s,
         okta.Group.instance.MKD_Employees@s,
+        okta.Group.instance.MKD_Sales@s,
+        okta.Group.instance.MKD_Support@s,
       ]
     }
   }
   allGroupsValid = true
+  _alias = "MKD Provisioning - Employees"
 }

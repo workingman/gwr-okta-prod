@@ -1,0 +1,11 @@
+okta.Group Employees {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "Employees"
+    description = "all employees"
+  }
+  _alias = "Employees"
+}

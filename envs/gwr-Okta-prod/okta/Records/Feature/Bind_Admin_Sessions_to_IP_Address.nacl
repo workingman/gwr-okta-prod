@@ -1,0 +1,10 @@
+okta.Feature Bind_Admin_Sessions_to_IP_Address@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Bind Admin Sessions to IP Address"
+  description = "Reauthenticate admins if their session is used from a different IP address."
+  stage = {
+    value = "EA"
+  }
+  _alias = "Bind Admin Sessions to IP Address"
+}

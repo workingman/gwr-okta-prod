@@ -23,4 +23,5 @@ okta.PasswordPolicyRule Default_Policy_s__Default_Rule@umuus {
   _parent = [
     okta.PasswordPolicy.instance.Default_Policy@s,
   ]
+  _alias = "Default Rule"
 }

@@ -38,4 +38,5 @@ okta.AccessPolicyRule new_access_policy_s__new@uumuu {
   _parent = [
     okta.AccessPolicy.instance.new_access_policy@s,
   ]
+  _alias = "new"
 }

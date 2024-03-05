@@ -12,10 +12,9 @@ okta.AuthorizationServerPolicy default__Default_Policy@uus {
     }
   }
   type = "OAUTH_AUTHORIZATION_POLICY"
-  policyRules = [
-    okta.AuthorizationServerPolicyRule.instance.default__Default_Policy_uus__Default_Policy_Rule@uuumuuss,
-  ]
+  
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "Default Policy"
 }

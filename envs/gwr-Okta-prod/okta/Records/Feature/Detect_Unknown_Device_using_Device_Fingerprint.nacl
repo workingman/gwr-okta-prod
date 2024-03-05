@@ -1,0 +1,10 @@
+okta.Feature Detect_Unknown_Device_using_Device_Fingerprint@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Detect Unknown Device using Device Fingerprint"
+  description = "Admins can configure how unknown devices are treated based on the presence of a device fingerprint."
+  stage = {
+    value = "EA"
+  }
+  _alias = "Detect Unknown Device using Device Fingerprint"
+}

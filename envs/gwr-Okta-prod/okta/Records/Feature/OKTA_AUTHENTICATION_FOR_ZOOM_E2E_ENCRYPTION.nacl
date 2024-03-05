@@ -6,4 +6,5 @@ okta.Feature OKTA_AUTHENTICATION_FOR_ZOOM_E2E_ENCRYPTION@s {
   stage = {
     value = "EA"
   }
+  _alias = "OKTA AUTHENTICATION FOR ZOOM E2E ENCRYPTION"
 }

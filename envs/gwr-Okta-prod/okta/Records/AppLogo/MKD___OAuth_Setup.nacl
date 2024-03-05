@@ -1,0 +1,8 @@
+okta.AppLogo MKD___OAuth_Setup@sbss {
+  fileName = "MKDOAuthSetup.png"
+  contentType = "png"
+  content = file("okta/AppLogo/MKDOAuthSetup.png")
+  _parent = [
+    okta.Application.instance.MKD___OAuth_Setup@sbss,
+  ]
+}

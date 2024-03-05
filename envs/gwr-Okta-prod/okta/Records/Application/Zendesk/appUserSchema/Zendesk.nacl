@@ -57,4 +57,5 @@ okta.AppUserSchema Zendesk {
   _parent = [
     okta.Application.instance.Zendesk,
   ]
+  _alias = "Zendesk User"
 }

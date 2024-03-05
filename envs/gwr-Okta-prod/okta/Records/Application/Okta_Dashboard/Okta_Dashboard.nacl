@@ -27,7 +27,10 @@ okta.Application Okta_Dashboard@s {
         }
       }
     }
+    manualProvisioning = false
+    implicitAssignment = false
   }
   profileEnrollment = okta.ProfileEnrollmentPolicy.instance.Default_Policy@s
   accessPolicy = okta.AccessPolicy.instance.Classic_Migrated@s
+  _alias = "Okta Dashboard"
 }

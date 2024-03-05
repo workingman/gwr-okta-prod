@@ -1,9 +1,0 @@
-okta.Group SRD___Support@sbs {
-  objectClass = [
-    "okta:user_group",
-  ]
-  type = "OKTA_GROUP"
-  profile = {
-    name = "SRD - Support"
-  }
-}

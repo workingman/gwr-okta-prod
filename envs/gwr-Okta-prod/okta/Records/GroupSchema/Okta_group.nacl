@@ -65,4 +65,5 @@ okta.GroupSchema Okta_group@s {
       ]
     }
   }
+  _alias = "Okta group"
 }

@@ -1,0 +1,10 @@
+okta.Feature Manage_SAML_Application_session_lifetimes_with_Okta@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Manage SAML Application session lifetimes with Okta"
+  description = "Enhance security of SAML applications by managing a user's session lifetime using Okta."
+  stage = {
+    value = "EA"
+  }
+  _alias = "Manage SAML Application session lifetimes with Okta"
+}

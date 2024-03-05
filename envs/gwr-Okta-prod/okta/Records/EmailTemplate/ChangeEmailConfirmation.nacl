@@ -1,3 +1,0 @@
-okta.EmailTemplate ChangeEmailConfirmation {
-  name = "ChangeEmailConfirmation"
-}

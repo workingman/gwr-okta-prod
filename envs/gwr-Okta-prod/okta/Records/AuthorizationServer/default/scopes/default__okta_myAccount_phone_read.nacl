@@ -12,4 +12,5 @@ okta.OAuth2Scope default__okta_myAccount_phone_read@uuvvv {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "Read my account phone number"
 }

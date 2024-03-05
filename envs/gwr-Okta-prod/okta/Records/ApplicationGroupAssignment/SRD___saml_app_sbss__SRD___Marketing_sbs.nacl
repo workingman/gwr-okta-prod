@@ -1,0 +1,8 @@
+okta.ApplicationGroupAssignment SRD___saml_app_sbss__SRD___Marketing_sbs@uuuumuuuuum {
+  id = okta.Group.instance.SRD___Marketing@sbs
+  priority = 0
+  _parent = [
+    okta.Application.instance.SRD___saml_app@sbss,
+  ]
+  _alias = "SRD - saml app : SRD - Marketing"
+}

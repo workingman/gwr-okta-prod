@@ -21,4 +21,5 @@ okta.IdentityProviderPolicyRule Idp_Discovery_Policy_s__Default_Rule@uumuus {
   _parent = [
     okta.IdentityProviderPolicy.instance.Idp_Discovery_Policy@s,
   ]
+  _alias = "Default Rule"
 }

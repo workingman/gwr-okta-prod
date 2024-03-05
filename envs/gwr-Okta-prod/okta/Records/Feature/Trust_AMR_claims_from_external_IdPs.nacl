@@ -1,9 +1,0 @@
-okta.Feature Trust_AMR_claims_from_external_IdPs@s {
-  type = "self-service"
-  status = "DISABLED"
-  name = "Trust AMR claims from external IdPs"
-  description = "This feature allows an admin to configure their org to accept Authentication Method Reference (AMR) claims from a SAML or OpenID Connect IdP for use in Okta policy evaluation."
-  stage = {
-    value = "EA"
-  }
-}

@@ -7,4 +7,5 @@ okta.Group Everyone {
     name = "Everyone"
     description = "All users in your organization"
   }
+  _alias = "Everyone"
 }

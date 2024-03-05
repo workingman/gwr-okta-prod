@@ -13,4 +13,5 @@ okta.OAuth2Claim default__email_verified {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "email_verified"
 }

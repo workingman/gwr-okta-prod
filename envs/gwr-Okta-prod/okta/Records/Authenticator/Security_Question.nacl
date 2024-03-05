@@ -6,4 +6,5 @@ okta.Authenticator Security_Question@s {
   settings = {
     allowedFor = "recovery"
   }
+  _alias = "Security Question"
 }

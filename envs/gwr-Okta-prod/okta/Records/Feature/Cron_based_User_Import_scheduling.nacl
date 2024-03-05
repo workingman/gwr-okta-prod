@@ -6,4 +6,5 @@ okta.Feature Cron_based_User_Import_scheduling@s {
   stage = {
     value = "EA"
   }
+  _alias = "Cron based User Import scheduling"
 }

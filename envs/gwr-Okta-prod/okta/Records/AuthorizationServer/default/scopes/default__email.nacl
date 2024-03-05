@@ -12,4 +12,5 @@ okta.OAuth2Scope default__email {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "View your email address."
 }

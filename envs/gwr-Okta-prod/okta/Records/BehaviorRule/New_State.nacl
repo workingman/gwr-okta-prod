@@ -9,4 +9,5 @@ okta.BehaviorRule New_State@s {
       granularity = "SUBDIVISION"
     }
   }
+  _alias = "New State"
 }

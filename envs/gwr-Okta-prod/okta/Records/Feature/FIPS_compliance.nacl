@@ -6,4 +6,5 @@ okta.Feature FIPS_compliance@s {
   stage = {
     value = "EA"
   }
+  _alias = "FIPS compliance"
 }

@@ -8,4 +8,5 @@ okta.BehaviorRule New_IP@s {
       maxEventsUsedForEvaluation = 50
     }
   }
+  _alias = "New IP"
 }

@@ -5,7 +5,8 @@ okta.AccessPolicy new_access_policy@s {
 new
 
 '''
-  priority = 1
+  
   system = false
   type = "ACCESS_POLICY"
+  _alias = "new access policy"
 }

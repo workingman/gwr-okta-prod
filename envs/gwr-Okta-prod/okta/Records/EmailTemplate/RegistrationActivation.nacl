@@ -1,3 +1,0 @@
-okta.EmailTemplate RegistrationActivation {
-  name = "RegistrationActivation"
-}

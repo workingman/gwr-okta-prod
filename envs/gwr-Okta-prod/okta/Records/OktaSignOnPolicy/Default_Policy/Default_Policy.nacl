@@ -2,7 +2,7 @@ okta.OktaSignOnPolicy Default_Policy@s {
   status = "ACTIVE"
   name = "Default Policy"
   description = "The default policy applies in all situations if no other policy applies."
-  priority = 1
+  priority = 2
   system = true
   conditions = {
     people = {
@@ -14,4 +14,5 @@ okta.OktaSignOnPolicy Default_Policy@s {
     }
   }
   type = "OKTA_SIGN_ON"
+  _alias = "Default Policy"
 }

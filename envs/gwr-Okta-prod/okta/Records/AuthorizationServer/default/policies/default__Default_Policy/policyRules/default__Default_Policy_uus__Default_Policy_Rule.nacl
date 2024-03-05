@@ -37,4 +37,5 @@ okta.AuthorizationServerPolicyRule default__Default_Policy_uus__Default_Policy_R
     okta.AuthorizationServerPolicy.instance.default__Default_Policy@uus,
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "Default Policy Rule"
 }

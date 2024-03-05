@@ -6,4 +6,5 @@ okta.Feature Block_passkeys_for_FIDO2__WebAuthn__Authenticators@ssssjks {
   stage = {
     value = "EA"
   }
+  _alias = "Block passkeys for FIDO2 (WebAuthn) Authenticators"
 }

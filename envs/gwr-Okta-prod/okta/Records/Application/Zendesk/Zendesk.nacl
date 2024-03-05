@@ -35,10 +35,14 @@ okta.Application Zendesk {
         }
       }
     }
+    manualProvisioning = false
+    implicitAssignment = false
+    signOn = {
+      signOnMode = "SAML_2_0"
+    }
   }
-  assignedGroups = [
-    okta.Group.instance.SRD___Support@sbs,
-  ]
+  
   profileEnrollment = okta.ProfileEnrollmentPolicy.instance.Default_Policy@s
   accessPolicy = okta.AccessPolicy.instance.Password_only@s
+  _alias = "Zendesk"
 }

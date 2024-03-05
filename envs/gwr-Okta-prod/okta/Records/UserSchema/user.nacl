@@ -504,4 +504,5 @@ okta.UserSchema user {
   _parent = [
     okta.UserType.instance.user,
   ]
+  _alias = "User"
 }

@@ -6,4 +6,5 @@ okta.Authenticator Phone {
   settings = {
     allowedFor = "recovery"
   }
+  _alias = "Phone"
 }

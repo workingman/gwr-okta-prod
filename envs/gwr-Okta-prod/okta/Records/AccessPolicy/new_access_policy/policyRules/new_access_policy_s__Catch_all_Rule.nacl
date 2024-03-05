@@ -17,4 +17,5 @@ okta.AccessPolicyRule new_access_policy_s__Catch_all_Rule@uumuubs {
   _parent = [
     okta.AccessPolicy.instance.new_access_policy@s,
   ]
+  _alias = "Catch-all Rule"
 }

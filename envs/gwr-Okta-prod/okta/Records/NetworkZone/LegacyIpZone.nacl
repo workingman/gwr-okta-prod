@@ -4,4 +4,5 @@ okta.NetworkZone LegacyIpZone {
   status = "ACTIVE"
   usage = "POLICY"
   system = true
+  _alias = "LegacyIpZone"
 }

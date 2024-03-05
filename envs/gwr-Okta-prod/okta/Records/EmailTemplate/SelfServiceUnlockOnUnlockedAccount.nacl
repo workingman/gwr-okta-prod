@@ -1,3 +1,0 @@
-okta.EmailTemplate SelfServiceUnlockOnUnlockedAccount {
-  name = "SelfServiceUnlockOnUnlockedAccount"
-}

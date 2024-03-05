@@ -13,4 +13,5 @@ okta.OAuth2Claim default__middle_name {
   _parent = [
     okta.AuthorizationServer.instance.default,
   ]
+  _alias = "middle_name"
 }

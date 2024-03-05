@@ -1,9 +1,0 @@
-okta.Feature Okta_FastPass_collects_device_signals_in_every_auth_attempt@s {
-  type = "self-service"
-  status = "DISABLED"
-  name = "Okta FastPass collects device signals in every auth attempt"
-  description = "Force Okta FastPass to collect device signals in every auth attempt when policy has device condition"
-  stage = {
-    value = "EA"
-  }
-}

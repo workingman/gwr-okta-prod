@@ -1,3 +1,0 @@
-okta.EmailTemplate ADUserActivation {
-  name = "ADUserActivation"
-}

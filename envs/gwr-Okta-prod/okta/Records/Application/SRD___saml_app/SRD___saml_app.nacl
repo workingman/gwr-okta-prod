@@ -65,11 +65,13 @@ okta.Application SRD___saml_app@sbss {
       slo = {
         enabled = false
       }
+      signOnMode = "SAML_2_0"
     }
+    manualProvisioning = false
+    implicitAssignment = false
   }
-  assignedGroups = [
-    okta.Group.instance.SRD___Marketing@sbs,
-  ]
+  
   profileEnrollment = okta.ProfileEnrollmentPolicy.instance.SRD___Enrollment_Policy@sbss
   accessPolicy = okta.AccessPolicy.instance.Default_Policy@s
+  _alias = "SRD - saml app"
 }
