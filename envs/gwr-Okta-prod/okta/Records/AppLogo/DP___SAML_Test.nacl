@@ -1,0 +1,8 @@
+okta.AppLogo DP___SAML_Test@sbss {
+  fileName = "DPSAMLTest.png"
+  contentType = "png"
+  content = file("okta/AppLogo/DPSAMLTest.png")
+  _parent = [
+    okta.Application.instance.DP___SAML_Test@sbss,
+  ]
+}

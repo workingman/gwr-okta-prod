@@ -1,0 +1,10 @@
+okta.Feature App_sign_on_policy_granular_authenticator_constraints@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "App sign on policy granular authenticator constraints"
+  description = "Authentication Policy API enhancements to specify required and/or disallowed authenticators to satisfy assurance."
+  stage = {
+    value = "EA"
+  }
+  _alias = "App sign on policy granular authenticator constraints"
+}

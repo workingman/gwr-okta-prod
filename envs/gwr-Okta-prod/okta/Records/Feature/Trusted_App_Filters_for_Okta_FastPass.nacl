@@ -1,0 +1,10 @@
+okta.Feature Trusted_App_Filters_for_Okta_FastPass@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Trusted App Filters for Okta FastPass"
+  description = "You can now create Trusted App filters for FastPass using Okta Expression Language. Trusted App filters allow orgs to manage which applications can invoke Okta FastPass in Windows, and in Google Chrome and Firefox browsers for macOS."
+  stage = {
+    value = "EA"
+  }
+  _alias = "Trusted App Filters for Okta FastPass"
+}

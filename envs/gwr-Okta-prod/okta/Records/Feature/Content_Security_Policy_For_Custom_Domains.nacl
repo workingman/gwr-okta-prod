@@ -1,0 +1,10 @@
+okta.Feature Content_Security_Policy_For_Custom_Domains@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Content Security Policy For Custom Domains"
+  description = "Enable Content Security Policy (CSP) for customizable sign-in and error pages for custom domains"
+  stage = {
+    value = "EA"
+  }
+  _alias = "Content Security Policy For Custom Domains"
+}

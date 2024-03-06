@@ -1,0 +1,9 @@
+okta.FavIcon {
+  fileName = "config.ico"
+  contentType = "ico"
+  content = file("okta/FavIcon/config.ico")
+  _parent = [
+    okta.BrandTheme.instance,
+    okta.Brand.instance,
+  ]
+}

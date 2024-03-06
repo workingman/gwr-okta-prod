@@ -1,0 +1,10 @@
+okta.Feature Display_Stay_signed_in_option_either_before_or_after_end_users_sign_in@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Display Stay signed in option either before or after end users sign in"
+  description = "Admins can display the \"Stay signed in\" option before or after end users sign in. End users can sign out of all active Okta sessions from the Okta End-User Dashboard."
+  stage = {
+    value = "EA"
+  }
+  _alias = "Display Stay signed in option either before or after end users sign in"
+}

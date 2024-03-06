@@ -1,0 +1,10 @@
+okta.Feature Prevent_new_single_factor_access_to_the_admin_console@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Prevent new single factor access to the admin console"
+  description = "This feature prevents creating new rules that allow access to the Okta admin console with a single factor. There is no impact to any existing rules that allow single factor access."
+  stage = {
+    value = "EA"
+  }
+  _alias = "Prevent new single factor access to the admin console"
+}

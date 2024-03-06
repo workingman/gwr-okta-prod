@@ -1,0 +1,11 @@
+okta.Group SRD___Test_Group@sbss {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "SRD - Test Group"
+    description = "Testing"
+  }
+  _alias = "SRD - Test Group"
+}

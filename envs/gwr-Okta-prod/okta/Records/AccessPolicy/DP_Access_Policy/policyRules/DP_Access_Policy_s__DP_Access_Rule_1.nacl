@@ -1,0 +1,51 @@
+okta.AccessPolicyRule DP_Access_Policy_s__DP_Access_Rule_1@uumuusss {
+  status = "ACTIVE"
+  name = "DP Access Rule 1"
+  priority = 0
+  system = false
+  conditions = {
+    people = {
+      groups = {
+        include = [
+          okta.Group.instance.DP_Group_1@s,
+        ]
+      }
+    }
+    network = {
+      connection = "ANYWHERE"
+    }
+    riskScore = {
+      level = "ANY"
+    }
+    userType = {
+      include = [
+        okta.UserType.instance.user,
+        okta.UserType.instance.DP_User_Type,
+      ]
+    }
+  }
+  actions = {
+    appSignOn = {
+      access = "ALLOW"
+      verificationMethod = {
+        factorMode = "1FA"
+        type = "ASSURANCE"
+        reauthenticateIn = "PT2H"
+        constraints = [
+          {
+            knowledge = {
+              types = [
+                "password",
+              ]
+            }
+          },
+        ]
+      }
+    }
+  }
+  type = "ACCESS_POLICY"
+  _parent = [
+    okta.AccessPolicy.instance.DP_Access_Policy@s,
+  ]
+  _alias = "DP Access Rule 1"
+}

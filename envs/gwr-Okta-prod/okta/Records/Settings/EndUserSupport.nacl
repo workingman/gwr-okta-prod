@@ -1,0 +1,5 @@
+okta.EndUserSupport {
+  technicalContactId = "shir.reifenberg+dev6@salto.io"
+  technicalContactEmail = "shir.reifenberg+dev6@salto.io"
+  usermailEnabled = false
+}

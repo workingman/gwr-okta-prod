@@ -1,0 +1,10 @@
+okta.Group DP___Zendesk_Push_Group@sbsss {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "DP - Zendesk Push Group"
+  }
+  _alias = "DP - Zendesk Push Group"
+}

@@ -1,0 +1,10 @@
+okta.Group Customers_apps@s {
+  objectClass = [
+    "okta:user_group",
+  ]
+  type = "OKTA_GROUP"
+  profile = {
+    name = "Customers apps"
+  }
+  _alias = "Customers apps"
+}

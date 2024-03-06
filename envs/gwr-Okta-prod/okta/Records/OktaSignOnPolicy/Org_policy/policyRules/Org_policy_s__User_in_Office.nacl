@@ -1,0 +1,44 @@
+okta.OktaSignOnPolicyRule Org_policy_s__User_in_Office@umuuss {
+  status = "ACTIVE"
+  name = "User in Office"
+  priority = 1
+  system = false
+  conditions = {
+    network = {
+      connection = "ZONE"
+      include = [
+        okta.NetworkZone.instance.US_office@s,
+      ]
+    }
+    authContext = {
+      authType = "ANY"
+    }
+    riskScore = {
+      level = "ANY"
+    }
+    identityProvider = {
+      provider = "ANY"
+    }
+  }
+  actions = {
+    signon = {
+      access = "ALLOW"
+      requireFactor = true
+      factorPromptMode = "DEVICE"
+      rememberDeviceByDefault = false
+      session = {
+        usePersistentCookie = false
+        maxSessionIdleMinutes = 720
+        maxSessionLifetimeMinutes = 43200
+      }
+      additionalProperties = {
+        primaryFactor = "PASSWORD_IDP_ANY_FACTOR"
+      }
+    }
+  }
+  type = "SIGN_ON"
+  _parent = [
+    okta.OktaSignOnPolicy.instance.Org_policy@s,
+  ]
+  _alias = "User in Office"
+}
