@@ -43,6 +43,6 @@ okta.Application Salesforce_com@v {
     implicitAssignment = false
   }
   profileEnrollment = okta.ProfileEnrollmentPolicy.instance.Default_Policy@s
-  accessPolicy = okta.AccessPolicy.instance.GWR_Access_Policy@s
+  accessPolicy = okta.AccessPolicy.instance.Default_Policy@s
   _alias = "Salesforce.com"
 }
