@@ -1,0 +1,34 @@
+okta.AppUserSchema DP___SAML_Test_sbss@uuuum {
+  title = "DP - SAML Test User"
+  definitions = {
+    custom = {
+      id = "#custom"
+      type = "object"
+    }
+    base = {
+      id = "#base"
+      type = "object"
+      properties = {
+        additionalProperties = {
+          userName = {
+            title = "Username"
+            type = "string"
+            required = true
+            scope = "NONE"
+            maxLength = 100
+            master = {
+              type = "PROFILE_MASTER"
+            }
+          }
+        }
+      }
+      required = [
+        "userName",
+      ]
+    }
+  }
+  _parent = [
+    okta.Application.instance.DP___SAML_Test@sbss,
+  ]
+  _alias = "DP - SAML Test User"
+}

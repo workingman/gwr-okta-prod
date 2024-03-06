@@ -1,0 +1,8 @@
+okta.ApplicationGroupAssignment MKD___OAuth_Setup_sbss__MKD_Employees_s@uuuumuuum {
+  id = okta.Group.instance.MKD_Employees@s
+  priority = 0
+  _parent = [
+    okta.Application.instance.MKD___OAuth_Setup@sbss,
+  ]
+  _alias = "MKD - OAuth Setup : MKD Employees"
+}

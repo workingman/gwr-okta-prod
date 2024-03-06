@@ -1,0 +1,10 @@
+okta.Feature Includes_factor_enrollment_nickname_on_End_User_Settings_page@sssssbss {
+  type = "self-service"
+  status = "DISABLED"
+  name = "Includes factor enrollment nickname on End-User Settings page"
+  description = "End-users can nickname their phone, WebAuthn, and Okta Verify factors. If they have enrolled multiple instances of a factor, giving nicknames helps them identify the factors quickly. For example, “My personal cellphone” or “My office MacBook TouchID”."
+  stage = {
+    value = "EA"
+  }
+  _alias = "Includes factor enrollment nickname on End-User Settings page"
+}

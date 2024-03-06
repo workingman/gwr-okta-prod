@@ -1,0 +1,8 @@
+okta.ProfileEnrollmentPolicy Default_Policy@s {
+  status = "ACTIVE"
+  name = "Default Policy"
+  
+  system = true
+  type = "PROFILE_ENROLLMENT"
+  _alias = "Default Policy"
+}

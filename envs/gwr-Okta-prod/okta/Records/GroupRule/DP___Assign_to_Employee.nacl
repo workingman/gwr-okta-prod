@@ -1,0 +1,20 @@
+okta.GroupRule DP___Assign_to_Employee@sbsss {
+  type = "group_rule"
+  status = "ACTIVE"
+  name = "DP - Assign to Employee"
+  conditions = {
+    expression = {
+      value = "String.stringContains(${ okta.UserSchema.instance.user.definitions.base.properties.login },\"@salto.io\")"
+      type = "urn:okta:expression:1.0"
+    }
+  }
+  actions = {
+    assignUserToGroups = {
+      groupIds = [
+        okta.Group.instance.DP_Employees@s,
+      ]
+    }
+  }
+  allGroupsValid = true
+  _alias = "DP - Assign to Employee"
+}

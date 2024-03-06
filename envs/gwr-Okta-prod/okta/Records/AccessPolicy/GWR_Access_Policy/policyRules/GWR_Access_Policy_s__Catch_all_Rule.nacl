@@ -1,0 +1,28 @@
+okta.AccessPolicyRule GWR_Access_Policy_s__Catch_all_Rule@uumuubs {
+  status = "ACTIVE"
+  name = "Catch-all Rule"
+  priority = 99
+  system = true
+  actions = {
+    appSignOn = {
+      access = "ALLOW"
+      verificationMethod = {
+        factorMode = "2FA"
+        type = "ASSURANCE"
+        reauthenticateIn = "PT12H"
+        constraints = [
+          {
+            possession = {
+              deviceBound = "REQUIRED"
+            }
+          },
+        ]
+      }
+    }
+  }
+  type = "ACCESS_POLICY"
+  _parent = [
+    okta.AccessPolicy.instance.GWR_Access_Policy@s,
+  ]
+  _alias = "Catch-all Rule"
+}

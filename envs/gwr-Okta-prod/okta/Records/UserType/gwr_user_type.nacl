@@ -1,0 +1,6 @@
+okta.UserType gwr_user_type {
+  displayName = "GWR User Type"
+  name = "gwr_user_type"
+  default = false
+  _alias = "GWR User Type"
+}

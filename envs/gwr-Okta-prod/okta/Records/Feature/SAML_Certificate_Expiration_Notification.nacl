@@ -1,0 +1,10 @@
+okta.Feature SAML_Certificate_Expiration_Notification@s {
+  type = "self-service"
+  status = "DISABLED"
+  name = "SAML Certificate Expiration Notification"
+  description = "Enables notifications when org certificates are about to expire"
+  stage = {
+    value = "EA"
+  }
+  _alias = "SAML Certificate Expiration Notification"
+}

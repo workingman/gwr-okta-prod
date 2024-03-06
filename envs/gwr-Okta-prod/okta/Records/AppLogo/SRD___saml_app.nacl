@@ -1,0 +1,8 @@
+okta.AppLogo SRD___saml_app@sbss {
+  fileName = "SRDsamlapp.png"
+  contentType = "png"
+  content = file("okta/AppLogo/SRDsamlapp.png")
+  _parent = [
+    okta.Application.instance.SRD___saml_app@sbss,
+  ]
+}
